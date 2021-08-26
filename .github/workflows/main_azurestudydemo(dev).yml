@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP app to Azure Web App - azurestudydemo(main)
+name: Build and deploy ASP app to Azure Web App - azurestudydemo(dev)
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
     runs-on: 'windows-latest'
     needs: build
     environment:
-      name: 'main'
+      name: 'dev'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -52,6 +52,6 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'azurestudydemo'
-        slot-name: 'main'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_bbad78cc72004a1d8b25151ff9cde86f }}
+        slot-name: 'dev'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_635b20b3360146f4a90e90c39785b463 }}
         package: .
