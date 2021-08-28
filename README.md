@@ -7,6 +7,7 @@
 + [GIthub Public IP addresses](https://docs.github.com/en/rest/reference/meta)
 
 
+* App Service のネットワークACL は最大512個までしか登録できない。
 ```Powershell
 $priority = 200;
 $json = Invoke-RestMethod -Uri "https://api.github.com/meta"
@@ -17,4 +18,10 @@ foreach($ip in $json.actions){
         $priority++
     }
 }
+```
+
+* Github Actions で利用する IP Address の確認
+```Powershell
+$json = Invoke-RestMethod -Uri "https://api.github.com/meta"
+$json.actions | Where-Object {$_ -Like "*.*"} > .\actions.txt
 ```
