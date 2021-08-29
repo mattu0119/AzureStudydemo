@@ -6,7 +6,7 @@
 + [クイックスタート: ASP.NET Web アプリをデプロイする](https://docs.microsoft.com/ja-jp/azure/app-service/quickstart-dotnetcore?tabs=netcore31&pivots=development-environment-vscode)
 + [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/)
 + [GIthub Public IP addresses](https://docs.github.com/en/rest/reference/meta)
-
++ [負荷テストツール](https://app.k6.io/)
 
 * App Service のネットワークACL は最大512個までしか登録できない。
 ```Powershell
