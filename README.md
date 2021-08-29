@@ -27,4 +27,4 @@ $json.actions | Where-Object {$_ -Like "*.*"} > .\actions.txt
 ```
 + [Install Powershell 7.1](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)
 + [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
-+ [How to whitelist with Github Actions in Azure Webapp using Github's API]
++ [How to whitelist with Github Actions in Azure Webapp using Github's API](https://stackoverflow.com/questions/68011051/how-do-i-whitelist-github-actions-ip-addresses-in-azure-web-app-using-githubs-a)
