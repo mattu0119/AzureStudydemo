@@ -25,3 +25,6 @@ foreach($ip in $json.actions){
 $json = Invoke-RestMethod -Uri "https://api.github.com/meta"
 $json.actions | Where-Object {$_ -Like "*.*"} > .\actions.txt
 ```
++ [Install Powershell 7.1](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)
++ [Install Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
++ [How to whitelist with Github Actions in Azure Webapp using Github's API]
